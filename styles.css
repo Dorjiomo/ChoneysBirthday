@@ -189,6 +189,13 @@ margin-bottom: 1.5rem;
 
     }
 
+    hr {
+  width: calc(57% + 1cm); /* 57% (card1 img) + 1cm total (0.5cm each side) */
+  max-width: 95vw; /* don't overflow viewport width */
+  border: 2px solid #000000;
+  margin: -10px auto 20px; /* center and spacing */
+  display: block;
+}
 /* Base container grid for desktop (3 columns already set) */
 
 /* Tablet: 2 columns */
@@ -244,8 +251,9 @@ margin-bottom: 1.5rem;
     width: 90%; /* make main card image larger on mobile */
   }
 
+
   hr {
-    width: 90%; /* smaller horizontal lines */
+    width: 90vw;  /* fallback for very narrow screens */
   }
 }
 
